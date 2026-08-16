@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/2) · sf-t3-1779642675702-009</title>
+  <meta name="description" content="sf-t3-1779642675702-009에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://sf-t3-1779642675702-009.maphoshirts.com/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* Reset & Base */
+ *, *::before, *::after {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+ html {
+ font-size: 16px;
+ -webkit-font-smoothing: antialiased;
+ -moz-osx-font-smoothing: grayscale;
+ }
+ body {
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+ background-color: #0b0b0b;
+ color: #e5e5e5;
+ line-height: 1.7;
+ padding: 0 1.5rem;
+ }
+ /* Layout */
+ .container {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 2rem 0;
+ }
+ header, main, footer {
+ margin-bottom: 3rem;
+ }
+ section {
+ margin: 3rem 0;
+ }
+ /* Typography */
+ h1, h2, h3, h4 {
+ font-weight: 500;
+ letter-spacing: -0.02em;
+ color: #f0e8d0;
+ }
+ h1 {
+ font-size: 3.2rem;
+ line-height: 1.2;
+ margin-bottom: 0.75rem;
+ border-left: 6px solid #d4af37;
+ padding-left: 1.2rem;
+ }
+ h2 {
+ font-size: 2.4rem;
+ margin-bottom: 1.5rem;
+ border-bottom: 1px solid #2a2a2a;
+ padding-bottom: 0.75rem;
+ }
+ h3 {
+ font-size: 1.6rem;
+ margin-bottom: 1rem;
+ color: #d4af37;
+ }
+ p {
+ margin-bottom: 1.4rem;
+ font-size: 1.1rem;
+ color: #cfcfcf;
+ }
+ a {
+ color: #e0c080;
+ text-decoration: none;
+ border-bottom: 1px dotted #d4af37;
+ transition: border 0.2s, color 0.2s;
+ }
+ a:hover {
+ color: #f5e6b0;
+ border-bottom: 1px solid #f5e6b0;
+ }
+ /* Drop Cap */
+ .drop-cap::first-letter {
+ font-size: 4.2rem;
+ float: left;
+ line-height: 0.8;
+ margin-right: 0.6rem;
+ margin-top: 0.2rem;
+ font-weight: 600;
+ color: #d4af37;
+ font-family: 'Times New Roman', serif;
+ }
+ /* 패턴: nav-present, hamburger-menu, responsive-768, tel-link */
+ nav {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 1.2rem 0;
+ border-bottom: 1px solid #2c2c2c;
+ flex-wrap: wrap;
+ }
+ .nav-links {
+ display: flex;
+ gap: 2.2rem;
+ font-size: 1rem;
+ }
+ .nav-links a {
+ border-bottom: none;
+ font-weight: 400;
+ letter-spacing: 0.02em;
+ }
+ .nav-links a:hover {
+ color: #f5e6b0;
+ }
+ .tel-link {
+ background: #1e1e1e;
+ padding: 0.4rem 1.2rem;
+ border: 1px solid #d4af37;
+ border-radius: 40px;
+ font-size: 1rem;
+ font-weight: 500;
+ color: #d4af37;
+ transition: background 0.2s, color 0.2s;
+ white-space: nowrap;
+ }
+ .tel-link:hover {
+ background: #d4af37;
+ color: #0b0b0b;
+ border-bottom: 1px solid #d4af37;
+ }
+ .hamburger-menu {
+ display: none;
+ flex-direction: column;
+ cursor: pointer;
+ gap: 5px;
+ }
+ .hamburger-menu span {
+ width: 28px;
+ height: 2px;
+ background: #e5e5e5;
+ border-radius: 4px;
+ }
+ /* 카드, FAQ, 정보 블록 */
+ .info-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+ gap: 2rem;
+ margin: 2.5rem 0;
+ }
+ .card {
+ background: #141414;
+ padding: 1.8rem 1.5rem;
+ border-radius: 20px;
+ border: 1px solid #2a2a2a;
+ transition: border 0.2s, background 0.2s;
+ }
+ .card:hover {
+ border-color: #d4af37;
+ background: #1c1c1c;
+ }
+ .card h3 {
+ margin-top: 0.2rem;
+ font-size: 1.5rem;
+ }
+ .card p {
+ font-size: 1rem;
+ margin-bottom: 0.2rem;
+ }
+ .faq-item {
+ background: #111;
+ padding: 1.5rem 2rem;
+ border-radius: 28px;
+ margin: 1.2rem 0;
+ border-left: 4px solid #d4af37;
+ }
+ .faq-item p {
+ margin-bottom: 0.3rem;
+ }
+ .faq-item strong {
+ color: #f0e8d0;
+ font-weight: 500;
+ }
+ .meta-tag {
+ display: inline-block;
+ background: #1f1f1f;
+ padding: 0.2rem 1rem;
+ border-radius: 30px;
+ font-size: 0.85rem;
+ color: #b0a890;
+ border: 1px solid #3a3a3a;
+ margin-right: 0.5rem;
+ }
+ footer {
+ border-top: 1px solid #2a2a2a;
+ padding-top: 2rem;
+ text-align: center;
+ color: #7a7a7a;
+ font-size: 0.95rem;
+ }
+ /* responsive-768 */
+ @media (max-width: 768px) {
+ body {
+ padding: 0 1rem;
+ }
+ h1 {
+ font-size: 2.2rem;
+ padding-left: 1rem;
+ }
+ h2 {
+ font-size: 1.8rem;
+ }
+ .nav-links {
+ display: none;
+ width: 100%;
+ flex-direction: column;
+ gap: 1rem;
+ padding: 1.5rem 0 0.5rem 0;
+ }
+ .nav-links.active {
+ display: flex;
+ }
+ .hamburger-menu {
+ display: flex;
+ }
+ nav {
+ align-items: center;
+ }
+ .tel-link {
+ margin-left: auto;
+ margin-right: 1rem;
+ }
+ .info-grid {
+ grid-template-columns: 1fr;
+ }
+ .faq-item {
+ padding: 1.2rem 1.2rem;
+ }
+ }
+ @media (min-width: 769px) {
+ .nav-links {
+ display: flex !important;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/2) · sf-t3-1779642675702-009">
+  <meta property="og:description" content="sf-t3-1779642675702-009에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://sf-t3-1779642675702-009.maphoshirts.com/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <nav>
+ <div class="hamburger-menu" onclick="this.nextElementSibling.classList.toggle('active')">
+ 
+ 
+ 
+ </div>
+ <div class="nav-links">
+ <a href="/">홈</a>
+ <a href="/info">정보</a>
+ <a href="/work">작업</a>
+ <a href="/contact">연락</a>
+ </div>
+ 
+ </nav>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 33개 · 1/2 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-001-8pa7a2.html">구글 상위노출 대행 현장에서 놓치기 쉬운 포인트를 기록해봤다</a>
+        <p class="post-item__summary">매장 이름이나 주요 취급 품목을 직접 검색창에 입력했을 때 자기 홈페이지가 첫 화면에 보이지 않는 경우, 그다음 단계로 검토하게 되는 선택지가 바로 상위노출 대행 서비스다. 이름은 비슷해 보여도 업</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-ohje70.html">구글 상위노출 대행 현장에서 놓치기 쉬운 포인트를 기록해봤다</a>
+        <p class="post-item__summary">최근 마포 지역을 중심으로 다양한 신작 애니메이션 콘텐츠가 쏟아져 나오면서 이를 효과적으로 알리기 위한 검색 엔진 최적화 전략이 중요해지고 있습니다. 특히 구글 검색 결과 상단에 우리 콘텐츠를 노출</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260705-1265.html">구글 상위노출 대행 지역 정보와 구글 인덱싱 속도 초고속 광회선 대역폭 최적화 비교 노트</a>
+        <p class="post-item__summary">구글 상위노출 대행에 관한 검색은 처음부터 답을 찾기보다 제외할 조건을 지우는 과정에 가깝습니다. 마포처럼 선택지가 많은 곳에서는 작은 표현 차이도 실제 만족도에 영향을 줍니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6685.html">마포 신작애니 업계가 구글 상위노출 대행을 주목하는 이유</a>
+        <p class="post-item__summary">신작애니가 공개되는 시점, 가장 중요한 과제는 타겟 소비자에게 효과적으로 도달하는 일이다. 마포 지역을 중심으로 활동하는 애니메이션 관련 브랜드라면 온라인과 오프라인을 아우르는 접근이 필요하다. 디</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6686.html">구글 상위노출 대행으로 신작애니 성공을 가속화하는 방법</a>
+        <p class="post-item__summary">구글 상위노출 대행은 오늘날 디지털 마케팅의 핵심 요소다. 특히 신작애니와 같은 niche 분야에서는 시청자 순위에 큰 변화를 가져올 수 있다. 목표 지표는 조회수와 방문자 증가, 그리고 포털 점유</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6687.html">마포 신작애니 홍보 전략, 구글 상위노출 대행의 역할</a>
+        <p class="post-item__summary">신작애니가 쏟아지는 요즘, 마포 지역에서도 다양한 장르의 애니메이션이 유입되고 있다. 하지만 아무리 퀄리티가 높은 작품이라도 소비자에게 닿지 않으면 의미가 없다. 이때 필요한 것이 바로 구글 상위노</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6688.html">구글 상위노출 대행으로 마포 신작애니 업계에 신속한 성장 주도</a>
+        <p class="post-item__summary">마포 신작애니 시장은 디지털 마케팅이 핵심 경쟁력으로 자리 잡고 있다. 구글 상위노출 대행은 키워드 전문화와 백링크 구축을 통해 신규 콘텐츠를 빠르게 노출시키는 역할을 한다. 결과적으로 검색 결과에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6689.html">마포구 신작애니 브랜드, 구글 상위노출 대행으로 오프라인 유입까지 잡다</a>
+        <p class="post-item__summary">최근 OTT 중심으로 애니메이션 소비 패턴이 바뀌면서 신작 노출 경로도 다양해지고 있다. 하지만 마포구에 위치한 중소 애니메이션 스튜디오나 배급사 입장에서는 여전히 구글 검색 결과에서 브랜드명이 보</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6690.html">구글 상위노출 대행이 필요한 마포 신작애니 환경</a>
+        <p class="post-item__summary">마포에서 신작 애니 제작이 활발해지면서 온라인 홍보의 중요성이 대두된다. 구글 검색 결과 상위에 노출되는 것이 수익 창출과 직결된다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6691.html">신작애니 스튜디오라면 알아둬야 할 마포 구글 상위노출 대행의 의미</a>
+        <p class="post-item__summary">마포구에 둥지를 튼 신작애니 제작사들이 늘고 있다. 홍대입구에서 합정까지 이어지는 이 지역에는 창작 생태계가 자리 잡으면서 자연스럽게 온라인 마케팅에 대한 관심도 함께 높아지고 있다. 특히 구글 상</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6692.html">구글 상위노출 대행을 통해 신작애니 브랜드가 마포에서 눈에 띌 수 있는 전략</a>
+        <p class="post-item__summary">구글 검색 결과에서 상위 노출은 브랜드 인지도를 높이는 가장 직관적인 수단이다. 특히 신작애니 같은 친밀감이 강한 콘텐츠는 검색 동향을 빠르게 반영한다. 마포 지역을 타깃으로 할 때는 지역별 검색량</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6693.html">마포 신작애니 업계가 주목하는 구글 상위노출 대행의 역할</a>
+        <p class="post-item__summary">마포구에서 새롭게 선보이는 애니메이션 작품이 늘어나면서 온라인 가시성 확보가 업계의 핵심 과제로 자리잡고 있다. 신작을 찾는 이용자들이 검색 결과에서 해당 정보를 쉽게 발견할 수 있어야 콘텐츠의 경</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6694.html">구글 상위노출 대행, 마포 신작애니를 위한 차별화 전략</a>
+        <p class="post-item__summary">구글 상위노출 대행은 단순히 검색 순위를 올리는 것이 아니라, 타깃 사용자에게 알맞은 노출을 제공해 비즈니스 가치를 극대화하는 서비스다. 소비층의 검색 습관과 시즌 트렌드를 반영해 키워드와 콘텐츠를</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6695.html">구글 상위노출 대행, 마포 신작애니에 효과적인 이유</a>
+        <p class="post-item__summary">새로 제작된 애니메이션을 많은 시청자에게 알리는 일은 생각보다 까다롭다. 특히 마포 지역에서 신작애니를 준비 중이라면 온라인 가시성 확보가 첫 번째 과제가 된다. 검색 결과 상위 노출이 곧 브랜드 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6696.html">구글 상위노출 대행으로 마포의 온라인 경쟁력 강화하기</a>
+        <p class="post-item__summary">구글 상위노출 대행이 기업에 어떤 변화를 가져올까? 온라인 가시성이 떨어지면 고객 유입이 급감한다. SNS 마케팅도 중요하지만, 먼저 검색엔진 최적화가 핵심이다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6697.html">마포 신작애니 홍보, 구글 상위노출 대행으로 시작하다</a>
+        <p class="post-item__summary">최근 신작애니의 성공적인 마케팅을 위해 구글 검색 결과 상위 노출이 필수 요소로 떠오르고 있다. 특히 마포 지역을 기반으로 한 애니메이션 관련 비즈니스는 오프라인과 온라인을 연결하는 전략이 중요하다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6698.html">구글 상위노출 대행으로 마포 신작애니 브랜드 성장 전략</a>
+        <p class="post-item__summary">구글 상위노출 대행은 신작애니 브랜드가 온라인에서 눈에 띄는 데 핵심 도구다. 특히 마포 지역의 SNS 유저층을 겨냥한 키워드 선택이 중요하다. 복잡한 검색 알고리즘을 이해하고 활용해 제품 노출률을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260706-6699.html">마포 신작애니, 구글 상위노출 대행이 여는 새로운 창</a>
+        <p class="post-item__summary">마포에서 새롭게 선보이는 애니메이션 콘텐츠가 늘어나고 있다. 하지만 작품의 퀄리티와 무관하게 검색 결과에서 뒤쳐지면 존재 자체가 묻히기 십상이다. 지역 기반 콘텐츠일수록 검색 상위 노출이 중요한 이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0344.html">구글 상위노출 대행 업체 선정과 구글 틈새 키워드 트래픽 외환 거래 전략의 관계</a>
+        <p class="post-item__summary">사업을 운영하며 구글 상위노출 대행 서비스를 찾는 이들은 트래픽의 중요성을 잘 알고 있습니다. 하지만 무작위로 많은 인원을 모으는 것보다 특정 타겟층을 공략하는 것이 효율적입니다. 특히 틈새 시장을</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0345.html">구글 상위노출 대행을 활용한 지수 성장 클리닉 정보</a>
+        <p class="post-item__summary">웹사이트 운영을 처음 시작하는 사용자들은 무작정 트래픽을 늘리는 것에만 급급하여 기초적인 도메인 건강성을 놓치는 경우가 많습니다. 특히 잘못된 백링크 관리는 도메인의 신뢰도를 급격히 하락시키며 마치</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
